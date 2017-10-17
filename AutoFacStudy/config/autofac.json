@@ -1,0 +1,24 @@
+﻿{
+  "defaultAssembly": "AutoFac.Service",
+  "components": [
+    {
+      "type": "AutoFac.Service.StudyService",
+      "services": [
+        {
+          "type": "AutoFacStudy.Interface.IStudy,AutoFacStudy.Interface"
+        }
+      ],
+      "injectProperties": true
+    },
+    {
+      "type": "AutoFac.Service.StudyService2",
+      "services": [
+        {
+          "type": "AutoFacStudy.Interface.IStudy2,AutoFacStudy.Interface"
+        }
+      ],
+      "injectProperties": true
+
+    }
+  ]
+}
