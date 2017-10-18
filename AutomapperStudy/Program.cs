@@ -23,7 +23,7 @@ namespace AutomapperStudy
             AutoMapperSix();
             AutpMapperSevevn();
             AutpMapperEight();
-            //1.普通转换  
+            //1.普通转换  after操作符 类似aop
             Name name1 = new Name() { FirstName = "L", LastName = "jz" };
             Mapper.Initialize(x => x.CreateMap<Name, NameDto>().BeforeMap((name, nameDto) => Console.WriteLine("hello world before"))
             .AfterMap((name, nameDto) => Console.WriteLine("hello world after")));
